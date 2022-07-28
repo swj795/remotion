@@ -20,9 +20,8 @@ export const MyDataFetch = () => {
  
   return (
     <div>
-      {data ? (
-        <div>This video has data from an API! {JSON.stringify(data)}</div>
-      ) : <div>hello</div>}
+      {data ? ( <div>This video has data from an API! {JSON.stringify(data)}</div>
+) : <div>hello</div>}
     </div>
   );
 };
