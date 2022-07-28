@@ -1,6 +1,6 @@
 import { Audio, useCurrentFrame, useVideoConfig } from "remotion";
 import { useAudioData, visualizeAudio } from "@remotion/media-utils";
-import audio from '../assets/audio.mp3';
+import audio from '../../public/audio.mp3';
  
 export const MyAudioVisual: React.FC = () => {
   const frame = useCurrentFrame();
