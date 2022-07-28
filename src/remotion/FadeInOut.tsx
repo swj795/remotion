@@ -2,7 +2,7 @@ import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
  
 export const FadeInOut = () => {
     const frame = useCurrentFrame();
-    const { durationInFrames } = useVideoConfig();
+    const { durationInFrames, width, height, fps, id } = useVideoConfig();
     const opacity = interpolate(
         frame,
         [0, 20, durationInFrames - 20, durationInFrames],
@@ -17,7 +17,10 @@ export const FadeInOut = () => {
             fontSize: "7em",
         }}
         >
-            {durationInFrames}
+            <p>{durationInFrames}</p>
+            <p>{width}</p>
+            <p>{height}</p>
+            <p>{id}</p>
         </div>
     )
 }
